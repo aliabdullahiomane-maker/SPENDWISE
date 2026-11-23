@@ -463,3 +463,12 @@ Copyright © 2026 Ali Omane.
 All rights reserved.
 
 This project is for educational and personal use. Permission is not granted to copy, modify, or redistribute the project without authorization.
+## Live Netlify Website URL
+
+https://spendwise-95pz.netlify.app/
+## Previous Deployment
+
+SpendWise was previously deployed using GitHub Pages and is available at:
+
+https://www.spendwisely.site/
+
