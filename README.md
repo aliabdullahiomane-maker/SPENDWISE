@@ -4,24 +4,34 @@ SpendWise is a Kenyan personal finance dashboard that helps users track monthly 
 
 The application uses Google authentication and Firebase Firestore to securely store each user's financial records.
 
+## Live Netlify Website URL
+
+[https://spendwise-95pz.netlify.app/](https://spendwise-95pz.netlify.app/)
+
+## Previous Deployment
+
+SpendWise was previously deployed using GitHub Pages and Firebase Hosting. It is available at:
+
+[https://www.spendwisely.site/](https://www.spendwisely.site/)
+
 ## Features
 
-- Google/Gmail sign-in.
-- Personal user accounts.
-- Monthly income tracking.
-- Expense recording in Kenyan Shillings.
-- KES currency formatting.
-- Remaining balance calculation.
-- Expense records stored in Firebase Firestore.
-- Expenses visible for 30 days.
-- Expense expiry using an `expiresAt` timestamp.
-- Remove expense functionality.
-- Dark mode and light mode.
-- User settings section.
-- Logout functionality.
-- Email reminder preparation.
-- Responsive design for desktop, tablet, and mobile devices.
-- Copyright footer for Ali Omane.
+- Google/Gmail sign-in
+- Personal user accounts
+- Monthly income tracking
+- Expense recording in Kenyan Shillings
+- KES currency formatting
+- Remaining balance calculation
+- Expense records stored in Firebase Firestore
+- Expenses visible for 30 days
+- Expense expiry using an `expiresAt` timestamp
+- Remove expense functionality
+- Dark mode and light mode
+- User settings section
+- Logout functionality
+- Email reminder preparation
+- Responsive design for desktop, tablet, and mobile devices
+- Copyright footer for Ali Omane
 
 ## Technologies Used
 
@@ -31,9 +41,17 @@ The application uses Google authentication and Firebase Firestore to securely st
 - Firebase Authentication
 - Google Authentication
 - Cloud Firestore
+- Git
+- GitHub
+- Netlify
 - Firebase Hosting
 - Live Server
-- Git and GitHub
+
+## GitHub Repository Information
+
+- Repository URL: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME
+- Repository visibility: Public
+- Main branch: main
 
 ## Project Structure
 
@@ -47,17 +65,44 @@ spendwise/
 └── README.md
 ```
 
+## Deployment Process Summary
+
+1. Prepared the SpendWise project files for deployment.
+2. Created and uploaded the project to a public GitHub repository.
+3. Connected the GitHub repository to Netlify.
+4. Deployed the website using Netlify.
+5. Added the Netlify domain to Firebase Authentication authorized domains.
+6. Made a visible footer update and pushed it to GitHub.
+7. Verified that Netlify automatically deployed the update.
+8. Tested all pages, styles, scripts, assets, and Google sign-in on the live website.
+
+## Challenges Encountered During Deployment
+
+- Locating the original project repository after the earlier Firebase deployment.
+- Understanding the difference between Firebase Hosting and Firebase Authentication settings.
+- Adding the Netlify domain to Firebase Authentication authorized domains.
+- Ensuring all project files and assets were included in the GitHub repository.
+- Verifying that automatic deployment worked after pushing updates.
+
+## Lessons Learned
+
+- GitHub is useful for storing and version-controlling web application source code.
+- Netlify enables continuous deployment from a connected GitHub repository.
+- Firebase Authentication requires authorized domains for sign-in to work on a new deployment domain.
+- Testing a live website is important because local and production environments can behave differently.
+- Clear documentation helps others understand and use the project.
+
 ## Requirements
 
 Before running the project, install or prepare:
 
-- A modern web browser.
-- Visual Studio Code.
-- VS Code Live Server extension.
-- A Google account.
-- A Firebase project.
-- Firebase Authentication.
-- Cloud Firestore.
+- A modern web browser
+- Visual Studio Code
+- VS Code Live Server extension
+- A Google account
+- A Firebase project
+- Firebase Authentication
+- Cloud Firestore
 
 ## Firebase Setup
 
@@ -79,11 +124,12 @@ Authentication → Sign-in method → Google → Enable
 
 Select the project support email and save the settings.
 
-Add the following authorized domains for local development:
+Add the following authorized domains:
 
 ```text
 localhost
 127.0.0.1
+spendwise-95pz.netlify.app
 ```
 
 ### 3. Create Firestore
@@ -313,7 +359,8 @@ Check the following:
 - Google Authentication is enabled.
 - `localhost` is listed in Authorized domains.
 - `127.0.0.1` is listed in Authorized domains.
-- The application is running through Live Server.
+- `spendwise-95pz.netlify.app` is listed in Authorized domains.
+- The application is running through Live Server or deployed on Netlify.
 - The browser is not blocking popups.
 - The correct Firebase project configuration is in `script.js`.
 
@@ -343,7 +390,13 @@ add this domain:
 localhost
 ```
 
-Do not include the protocol or port number.
+If the application is deployed on Netlify, add this domain:
+
+```text
+spendwise-95pz.netlify.app
+```
+
+Do not include the protocol, port number, or slash.
 
 ### Firestore permission denied
 
@@ -377,51 +430,18 @@ Make sure this script appears only once.
 
 ## Deployment
 
-Firebase Hosting can be used to deploy the application.
+The application is deployed using GitHub and Netlify.
 
-Install the Firebase CLI:
+1. The project source code is stored in a public GitHub repository.
+2. The GitHub repository is connected to Netlify.
+3. Netlify automatically builds and deploys the website whenever changes are pushed to the `main` branch.
+4. The live Netlify website is available at:
 
-```powershell
-npm install -g firebase-tools
-```
+[https://spendwise-95pz.netlify.app/](https://spendwise-95pz.netlify.app/)
 
-Log in:
+Firebase Hosting was previously used to deploy the application at:
 
-```powershell
-firebase login
-```
-
-Initialize Firebase Hosting:
-
-```powershell
-firebase init hosting
-```
-
-Select:
-
-```text
-Use an existing project
-```
-
-Choose the SpendWise project.
-
-For the public directory, enter:
-
-```text
-.
-```
-
-Deploy the application:
-
-```powershell
-firebase deploy --only hosting
-```
-
-After deployment, add the Firebase Hosting domain to:
-
-```text
-Authentication → Settings → Authorized domains
-```
+[https://www.spendwisely.site/](https://www.spendwisely.site/)
 
 ## Security Notes
 
@@ -463,14 +483,3 @@ Copyright © 2026 Ali Omane.
 All rights reserved.
 
 This project is for educational and personal use. Permission is not granted to copy, modify, or redistribute the project without authorization.
-## Live Netlify Website URL
-
-https://spendwise-95pz.netlify.app/
-## Previous Deployment
-
-SpendWise was previously deployed using GitHub Pages and is available at:
-
-https://www.spendwisely.site/
-## Live Netlify Website URL
-
-https://spendwise-95pz.netlify.app/
