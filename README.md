@@ -49,7 +49,7 @@ SpendWise was previously deployed using GitHub Pages and Firebase Hosting. It is
 
 ## GitHub Repository Information
 
-- Repository URL: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME
+- Repository URL: https://github.com/aliabdullahiomane-maker/SPENDWISE
 - Repository visibility: Public
 - Main branch: main
 
